@@ -1,0 +1,44 @@
+<div class="wrapper" (click)="onAlertClick()">
+
+    <div class="status" [ngClass]="'high'"></div>
+
+    <div nz-col>
+
+        <div nz-row  nzJustify="space-between">
+            <div nz-col>
+                <div nz-row>
+                    <div class="title">#1 - alertone</div>
+                </div>
+                <div nz-row class="subtitle">
+                Mal Cheia
+                </div>
+            </div>
+            <div nz-col>
+                <div nz-row class="alert-data" nzAlign="bottom" nzJustify="end">
+                    {{ toDateTime(alert.alertDate) }}
+                </div>
+            </div>
+            <div nz-col>
+                <div nz-row nzAlign="bottom">
+                    <div *ngIf="isAlertAboveUpperLimit(alert.alertValue, alert.alertUpperLimitValue); then aboveBlock else belowBlock"></div>
+                    <ng-template #aboveBlock>
+                        <div nz-row nzJustify="center" >
+                            <div>Valor ideal: <span class="span-required-value">{{calculatePercentage(alert.alertValue, alert.alertUpperLimitValue, alert.alertLowerLimitValue)}}/h</span></div>
+                        </div> 
+                    </ng-template>
+                    <ng-template #belowBlock>
+                        <div nz-row nzJustify="center" >
+                            <div>Valor ideal: <span class="span-required-value">{{calculatePercentage(alert.alertValue, alert.alertUpperLimitValue, alert.alertLowerLimitValue)}}/h</span></div>
+                        </div> 
+                    </ng-template>
+                </div>
+            
+            </div>
+            <div nz-col >
+                <div nz-row nzJustify="center" nzAlign="middle">
+                    Valor atual: <span class="span-current-value">421/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
