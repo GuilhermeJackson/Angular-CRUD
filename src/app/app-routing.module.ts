@@ -10,15 +10,15 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent
-},
-{
-  path: "products",
-  component: ProductsCrudComponent
-},
-{
-  path: "products/create",
-  component: ProductCreateComponent
-}
+  },
+  {
+    path: "products",
+    component: ProductsCrudComponent
+  },
+  {
+    path: "products/create",
+    component: ProductCreateComponent
+  }
 ];
 
 @NgModule({
