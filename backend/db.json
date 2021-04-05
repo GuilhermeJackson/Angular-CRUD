@@ -39,6 +39,11 @@
       "name": "OLOCO",
       "price": "10",
       "id": 8
+    },
+    {
+      "name": "TESTENADO SOM",
+      "price": "60",
+      "id": 9
     }
   ]
 }
