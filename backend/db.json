@@ -44,6 +44,11 @@
       "name": "TESTENADO SOM",
       "price": "60",
       "id": 9
+    },
+    {
+      "name": "AQUI é o teste false true",
+      "price": "10",
+      "id": 10
     }
   ]
 }
