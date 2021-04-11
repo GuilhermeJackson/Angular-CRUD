@@ -16,19 +16,9 @@
       "price": 10.89
     },
     {
-      "name": "PRODUTO TESTE",
-      "price": 125.9,
-      "id": 5
-    },
-    {
       "name": "Veio do form",
       "price": 125.9,
       "id": 6
-    },
-    {
-      "name": "TESTE",
-      "price": 125.9,
-      "id": 7
     }
   ]
 }
