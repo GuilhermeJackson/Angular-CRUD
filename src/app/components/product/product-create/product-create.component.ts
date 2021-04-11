@@ -9,12 +9,11 @@ import { Product } from './product.model';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
-  product: Product = {
-    name:'',
-    price: 0
-  }
-  constructor(private productService: ProductService,
-    private router: Router) { }
+  product: Product = {} as Product;
+  constructor(
+    private productService: ProductService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void { }
 
