@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Preta",
+      "name": "Caneta BIC Preta 123",
       "price": 5.89
     },
     {
@@ -16,9 +16,9 @@
       "price": 10.89
     },
     {
-      "name": "Veio do form",
-      "price": 125.9,
-      "id": 6
+      "name": "Fusca",
+      "price": "15000.90",
+      "id": 7
     }
   ]
 }
